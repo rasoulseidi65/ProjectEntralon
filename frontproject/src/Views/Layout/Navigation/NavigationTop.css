@@ -1,0 +1,79 @@
+.TopheaderRight{
+    display: flex;
+    align-items: self-start;
+    align-content: flex-end;
+    float: right;
+}
+.MuiAppBar-colorPrimary {
+    color: #fff!important;
+    background-color: #1c2a48!important;
+    margin-bottom: 600px!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+     color: white!important;
+}
+.MuiToolbar-root {
+    margin-top: -15px!important;
+}
+.subMenu{
+    color: #424242!important;
+    /*background: white;*/
+}
+.nav-item.dropdown:hover .dropdown-menu{
+    margin-top:-2px!important; ;
+    display: block!important;
+    width: 500%!important;
+    cursor: pointer!important;
+}
+.dropdown-menu:after{
+    content: '';
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    margin-top: -10px;
+    margin-left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 50px solid white;
+    /*border-style: solid;*/
+    /*border-width: 20px 20px 20px 20px;*/
+    /*border-color:transparent #331f01 transparent transparent   ;*/
+    transition: margin-left 0.4s ease-out;
+}
+li .subMenu::before{
+    content: "»";
+    color:#ff4444;
+    padding-right: 0.5rem;
+
+}
+li .subMenu:hover{
+    font-variation-settings: "BLDA" 506.944, "TRMC" 1000, "TRMK" 324.653;
+}
+h6{
+    font-size: 16px!important;
+}
+ul li.subMenu:hover{
+    color:  #4285F4!important;
+    font-family: Roboto, sans-serif;
+
+}
+/*ul .title_submenu::before{*/
+/*    content: "";*/
+/*    top:0;*/
+/*    left: 0;*/
+/*    margin-top: 40px;*/
+/*    margin-left: 40px;*/
+/*    height: 100px;*/
+/*    !*width: 1px;*!*/
+/*    background-color: #dc3545;*/
+/*    border-color: #dc3545;*/
+/*    border-style: solid;*/
+/*    border-width: thin;*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    z-index: 200;*/
+/*}*/
