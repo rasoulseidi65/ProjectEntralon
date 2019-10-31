@@ -3,12 +3,11 @@ import Navigation from "./Navigation/Navigation";
 function Layout ({children}) {
 
         return (
-            < div >
-<Navigation/>
+            <>
+            <Navigation/>
             {children}
-            < /div>
-    )
-        ;
+                </>
+    );
 
 }
 

@@ -250,8 +250,8 @@ export default function PersistentDrawerLeft() {
         logo
         </div>
         <div className="p-2 ml-auto TopheaderRight">
-        <button className="btn  btn-outline-info  text-white mr-2">Login</button>
-        <button className="btn btn-outline-info  text-white ">Sign Up</button>
+        <button className="btn  btn-outline-info  text-white mr-2 Login">Login</button>
+        <button className="btn btn-outline-info  text-white SignUp">Sign Up</button>
 
     </div>
     </div>
@@ -360,11 +360,15 @@ export default function PersistentDrawerLeft() {
         </ListItem>
         { handler(Menu) }
     </List>
+
     </Drawer>
+
     <main
+
     className={clsx(classes.content, {
         [classes.contentShift]: open,
     })}
+    onClick={handleDrawerClose}
 >
 
 </main>
