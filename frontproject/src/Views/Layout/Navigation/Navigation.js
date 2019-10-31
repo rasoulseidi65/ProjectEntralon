@@ -153,7 +153,7 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(0, 1),
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
-        backgroundColor: '#1c2a48'
+
     },
     content: {
         flexGrow: 1,
@@ -246,12 +246,12 @@ export default function PersistentDrawerLeft() {
     })}
 >
 <div className=" d-flex ">
-        <div className="mr-auto">
-        logo
+        <div className="mr-auto logo">
+        {/*<img src={"./logo1.png"} style={{height:"50px",width:"50px"}}/>*/}
         </div>
         <div className="p-2 ml-auto TopheaderRight">
-        <button className="btn  btn-outline-info  text-white mr-2 Login">Login</button>
-        <button className="btn btn-outline-info  text-white SignUp">Sign Up</button>
+        <button className="btn     text-white mr-1 Login">Login</button>
+        <button className="btn   text-white SignUp">Sign Up</button>
 
     </div>
     </div>
@@ -266,7 +266,7 @@ export default function PersistentDrawerLeft() {
 <MenuIcon/>
     </IconButton>
 
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-md navbar-dark">
         <NavLink className="navbar-brand" to={"/"}>ENTRANOL</NavLink>
 
         <div className="collapse navbar-collapse" id="navbarText">
@@ -342,24 +342,32 @@ export default function PersistentDrawerLeft() {
     }}
 >
 <div className={classes.drawerHeader}>
+    <img src={"./logo1.png"} style={{height:"100px",width:"225px"}}/>
         <IconButton onClick={handleDrawerClose}>
         {theme.direction === 'ltr' ? <ChevronLeftIcon/> : <ChevronRightIcon/>}
 </IconButton>
+
     </div>
 
 
     <Divider/>
     <List>
-        <ListItem
+        <ListItem className="mdb-color darken-3  text-white"
             key="menuHeading"
-            divider
             disableGutters>
             <ListItemText
                 inset
-                primary="Nested Menu"/>
+                primary="Main Menu"/>
         </ListItem>
         { handler(Menu) }
     </List>
+<Divider/>
+      <div className="socilaNetwork ml-5 mt-2">
+          <i className="fa fa-facebook-square ml-3 fa-2x text-info"></i>
+          <i className="fa fa-instagram ml-3 fa-2x text-danger" ></i>
+          <i className="fa fa-twitter-square ml-3 fa-2x text-info" ></i>
+          <i className="fa fa-envelope ml-3 fa-2x text-default" ></i>
+      </div>
 
     </Drawer>
 

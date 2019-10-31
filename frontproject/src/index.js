@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "font-awesome/css/font-awesome.min.css";
+import "mdbreact/dist/css/mdb.lite.css";
 import * as serviceWorker from './serviceWorker';
 import 'jquery/dist/jquery.min.js';
 import "bootstrap/dist/js/bootstrap.bundle.min";

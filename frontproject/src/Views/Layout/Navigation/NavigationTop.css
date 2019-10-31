@@ -66,8 +66,23 @@ ul li.subMenu:hover{
     border-width: thin!important;
     border-style: solid!important;
     border-radius: 30px!important;
+    border-color: #ff4444!important;
 }
-
+.Login:hover{
+    background-color: #ff4444!important;
+}
+.SignUp:hover{
+    background-color: #ff4444!important;
+}
+.socilaNetwork{
+    cursor: pointer;
+}
+.navbar {
+    box-shadow:none!important;
+}
+.MuiList-padding{
+    padding-top: 0!important;
+}
 /*ul .title_submenu::before{*/
 /*    content: "";*/
 /*    top:0;*/
