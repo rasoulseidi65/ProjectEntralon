@@ -245,13 +245,15 @@ export default function PersistentDrawerLeft() {
         [classes.appBarShift]: open,
     })}
 >
-<div className=" d-flex ">
-        <div className="mr-auto logo">
+<div className="d-flex ">
+        <div className="mr-auto logo ml-3">
+            <h3>ENTRALON</h3>
+            <h6>International Real Estate Agency</h6>
         {/*<img src={"./logo1.png"} style={{height:"50px",width:"50px"}}/>*/}
         </div>
-        <div className="p-2 ml-auto TopheaderRight">
-        <button className="btn     text-white mr-1 Login">Login</button>
-        <button className="btn   text-white SignUp">Sign Up</button>
+        <div className="p-2 ml-auto headerRight">
+        <button className="btn btn-outline-info btn-rounded text-white Login ">Login</button>
+        <button className="btn btn-outline-info btn-rounded text-white ">Sign Up</button>
 
     </div>
     </div>
@@ -266,67 +268,1035 @@ export default function PersistentDrawerLeft() {
 <MenuIcon/>
     </IconButton>
 
-    <nav className="navbar navbar-expand-md navbar-dark">
-        <NavLink className="navbar-brand" to={"/"}>ENTRANOL</NavLink>
+    <nav className="navbar  navbar-expand-lg navbar-dark">
+        {/*<NavLink className="navbar-brand" to={"/"}>ENTRANOL</NavLink>*/}
 
         <div className="collapse navbar-collapse" id="navbarText">
-        <ul className="navbar-nav mr-auto menu cleafix">
-        {
-            itemMenu.map((item, index) => (
-                <li className="nav-item parent" key={index}>
+        <ul className="navbar-nav mr-auto">
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">For Sale
+                    <i className="fa fa-angle-down ml-1"></i>
 
-            {(() => {
-                if (item.subMenu) {
-                    return (
-                        <Typography variant={'h6'}>
-                        <li className="nav-item dropdown" key={index}>
-                        <a className="nav-link dropdown-toggle "
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                        {item.name}
-                        </a>
-                        <div className="dropdown-menu animated bounceIn delay-1s"
-                    aria-labelledby="navbarDropdownMenuLink">
-                        <div className="d-flex">
-                        <div className="p-2 mr-5">
-                        <ul className="title_submenu">
-                        <li className="subMenu mb-3 mt-4" key={index}>UK
-                    property for sale
-                                 </li>
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">UK property for sale</p>
+                                            </a>
 
-                                 </ul>
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
 
-                                 </div>
-                                 <div className="p-2">
-                        <ul className="title_submenu" >
-                        <li className="subMenu mb-3 mt-4" key={index}>UK
-                    property for sale
-                                 </li>
+                                                <p className="text-center">Portugal property for sale </p>
+                                            </a>
 
-                                 </ul>
-                                 </div>
-                                 </div>
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">Spain property for sale </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">Cyprus property for sale</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">Turkey property for sale</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">Greece property for sale </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">United Arab Emirates property for sale </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">the UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">the Spain </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">the Portugal </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">the Cyprus </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">the Greece </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                    <li className="">
+                                        <a className="menu-item pl-0 text-center" href="#!">
+
+                                            <p className="text-center">the United Arab Emirates </p>
+                                        </a>
+
+                                    </li>
+                                </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">the Turkey </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                   <img src={"./image/imageMenu/slide3.jpg"} style={{width:"500px"}}/>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Virtual Reality
+                    <i className="fa fa-angle-down ml-1"></i>
+
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">uk</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK 5</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Bespoke Page
+                    <i className="fa fa-angle-down ml-1"></i>
+
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">uk</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK 5</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Market Trend
+                    <i className="fa fa-angle-down ml-1"></i>
+
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">uk</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK 5</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Contact Us
+                    <i className="fa fa-angle-down ml-1"></i>
+
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">uk</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK 5</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li className="nav-item dropdown mega-dropdown mr-2" >
+                <h6 className="nav-link" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">About Us
+                    <i className="fa fa-angle-down ml-1"></i>
+
+                </h6>
+                <div className="dropdown-menu mega-menu v-2 z-depth-1 darken-4 py-5 px-3"
+                     aria-labelledby="navbarDropdownMenuLink2">
+                    <div className="row">
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title font-weight-bold white-text  text-center">Properties For Sales
+                                Countreis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">uk</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK 5</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Best Properties </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div className="col-md-3 col-xl-3 sub-menu">
+                            <h6 className="sub-title  font-weight-bold white-text text-center">Properties
+                                Countryeis </h6>
+                            <ul className="list-unstyled">
+                                <div className="row animated zoomIn delay-05s">
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center">
+                                                <p className="text-center">For Sales UK</p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                    <div className="col-md-12">
+                                        <li className="">
+                                            <a className="menu-item pl-0 text-center" href="#!">
+
+                                                <p className="text-center">For Sales UK </p>
+                                            </a>
+
+                                        </li>
+                                    </div>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
 
 
-                                 </div>
-                                 </li>
-                                 </Typography>
+        </ul>
 
-                    )
-                        } else {
 
-                    return (<Typography variant={'h6'}>
-                        <NavLink className="nav-link"
-                    to={item.to} key={index}>{item.name}</NavLink>
-                        </Typography>);
-                }
-            })()}
-    {/*<NavLink className="nav-link" to={item.to} >{item.name}</NavLink>*/}
-</li>
-))
-}
-</ul>
     </div>
     </nav>
 
@@ -368,8 +1338,14 @@ export default function PersistentDrawerLeft() {
           <i className="fa fa-twitter-square ml-3 fa-2x text-info" ></i>
           <i className="fa fa-envelope ml-3 fa-2x text-default" ></i>
       </div>
+        <Divider/>
+        <div className="ml-1 mt-3">
+            <button className="btn btn-outline-danger btn-rounded text-white Login ">Login</button>
+            <button className="btn btn-outline-danger btn-rounded text-white ">Sign Up</button>
 
+        </div>
     </Drawer>
+
 
     <main
 
